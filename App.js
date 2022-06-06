@@ -1,15 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { StyleSheet,View} from 'react-native';
+import { StyleSheet,View, Text,StatusBar} from 'react-native';
 
 export default function App() {
   return (
     <Provider>
-      <View style={{
-        backgroundColor: "#222",
-        flex: 0.1,
-      }} >
-      </View>
+    <View>
+      <StatusBar style="auto" />
+      <Text>Open up App.js to start working on your app!</Text>
+    </View>
+  
       </Provider>
   );
 }
