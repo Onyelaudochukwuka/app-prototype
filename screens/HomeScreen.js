@@ -4,8 +4,8 @@ import tw from 'tailwind-react-native-classnames';
 import logo from '../assets/whiteicon.png';
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-          <Image source={logo} style={styles.img} />
+      <SafeAreaView style={styles.container}>
+              <Image source={logo} style={styles.img} />
     </SafeAreaView>
   )
 }
