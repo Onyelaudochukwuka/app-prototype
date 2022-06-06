@@ -2,22 +2,19 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { StyleSheet,View, Text,StatusBar} from 'react-native';
 import { store } from './store';
+import HomeScreen from './screens/HomeScreen';
 
 export default function App() {
   return (
     <Provider store={store}>
-    <View>
-      <StatusBar style="auto" />
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  
+   <HomeScreen />
       </Provider>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#222',
     alignItems: 'center',
     justifyContent: 'center',
   },
