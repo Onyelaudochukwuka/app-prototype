@@ -1,11 +1,10 @@
 import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native'
 import React from 'react';
 import tw from 'tailwind-react-native-classnames';
-import logo from '../assets/whiteicon.png';
 const HomeScreen = () => {
   return (
       <SafeAreaView style={styles.container}>
-              <Image source={logo} style={styles.img} />
+          <Image fade={1000} source={require("../assets/whiteicon.png")} style={styles.img} />
     </SafeAreaView>
   )
 }
@@ -16,9 +15,8 @@ const styles = StyleSheet.create({
         color: "blue"
     },
     img: {
-        width: "auto",
-        height: "auto",
-        flex: 0.5
+        width: 200,
+        height: 200,
     },
     container: {
         flex: 1,
