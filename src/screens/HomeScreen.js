@@ -4,7 +4,7 @@ import tw from 'tailwind-react-native-classnames';
 const HomeScreen = () => {
   return (
       <SafeAreaView style={styles.container}>
-          <Image fade={1000} source={require("../assets/whiteicon.png")} style={styles.img} />
+          <Image fade={1000} source={require("../../assets/whiteicon.png")} style={styles.img} />
     </SafeAreaView>
   )
 }
