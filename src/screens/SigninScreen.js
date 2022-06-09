@@ -14,7 +14,7 @@ const SigninScreen = () => {
           
               }]}></View>
               <View style={[styles.balls,{
-                  backgroundColor: '#666',
+                  backgroundColor: '#777',
                   left: -10,
                   top: -120
               }]}></View>
@@ -22,7 +22,7 @@ const SigninScreen = () => {
                   backgroundColor: '#666',
                   left: 0,
               }]}></View>
-              <View><Image/></View>
+              <View><Image source={require('../../assets/whiteicon.png')}/></View>
         </View>
       <Text>SigninScreen</Text>
     </View>
@@ -33,7 +33,7 @@ export default SigninScreen
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 10,
+        marginTop: 10,
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
