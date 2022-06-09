@@ -7,12 +7,20 @@ const SigninScreen = () => {
           <View style={styles.header}>
               <View style={[styles.balls,{
                   backgroundColor: '#888',
+                  left: -20,
+                  width: 300,
+                  height: 300,
+                  borderRadius: 300,
+          
               }]}></View>
               <View style={[styles.balls,{
                   backgroundColor: '#666',
+                  left: -10,
+                  top: -120
               }]}></View>
               <View style={[styles.balls,{
-                  backgroundColor: '#444',
+                  backgroundColor: '#666',
+                  left: 0,
               }]}></View>
               <View><Image/></View>
         </View>
@@ -25,6 +33,7 @@ export default SigninScreen
 
 const styles = StyleSheet.create({
     container: {
+        paddingTop: 10,
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
@@ -33,9 +42,10 @@ const styles = StyleSheet.create({
         top: 0,
     }, 
     balls: {
-        width: '80%',
+        width: 300,
         position: 'absolute',
-        height: 200,
-        borderRadius: 50,
+        height: 300,
+        borderRadius: 300,
+        top: -100,
     }
 })
