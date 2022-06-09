@@ -3,28 +3,10 @@ import React from 'react'
 
 const SigninScreen = () => {
   return (
-    <View>
-          <View style={styles.header}>
-              <View style={[styles.balls,{
-                  backgroundColor: '#888',
-                  left: -20,
-                  width: 300,
-                  height: 300,
-                  borderRadius: 300,
-          
-              }]}></View>
-              <View style={[styles.balls,{
-                  backgroundColor: '#777',
-                  left: -10,
-                  top: -120
-              }]}></View>
-              <View style={[styles.balls,{
-                  backgroundColor: '#666',
-                  left: 0,
-              }]}></View>
-              <View><Image source={require('../../assets/whiteicon.png')}/></View>
-        </View>
-      <Text>SigninScreen</Text>
+      <View style={styles.container}>
+          <View style={styles.sign}>
+      <Text>Sign in</Text>              
+          </View>
     </View>
   )
 }
@@ -36,16 +18,14 @@ const styles = StyleSheet.create({
         marginTop: 10,
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'flex-start',
+        padding: 60,
     },
-    header: {
-        top: 0,
-    }, 
-    balls: {
-        width: 300,
-        position: 'absolute',
-        height: 300,
-        borderRadius: 300,
-        top: -100,
+    sign: {
+        alignItems: 'flex-start',
+    },
+    text: {
+        fontWeight: '900',
+        fontSize: 30,
     }
 })
